@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+loop do
+  puts "foo"
+  sleep 1
+end
