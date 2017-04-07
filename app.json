@@ -1,0 +1,8 @@
+{
+  "name": "ruby puma getting started",
+  "description": "hello world with ruby and puma",
+  "repository": "https://github.com/mikehale/ruby-puma-getting-started",
+  "addons": [
+      { "plan": "heroku-postgresql:standard-0" }
+  ]
+}
