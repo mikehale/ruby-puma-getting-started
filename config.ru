@@ -1,7 +1,7 @@
 app = proc do |env|
-  puts "app=ruby-puma-getting-started #{env}"
-  body = 'Hello, World!'
-  [200, { 'Content-Type' => 'text/plain', 'Content-Length' => body.length.to_s }, [body]]
+  req = Rack::Request.new(env)
+  puts req.body.read
+  [200, {}, [""]]
 end
 
 run app
