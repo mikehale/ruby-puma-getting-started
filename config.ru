@@ -1,6 +1,8 @@
+$stdout.sync = $stderr.sync = true
 app = proc do |env|
   puts "app=ruby-puma-getting-started #{env}"
   body = 'Hello, World!'
+  puts '@[production.login] {"uid":123}'
   [200, { 'Content-Type' => 'text/plain', 'Content-Length' => body.length.to_s }, [body]]
 end
 
