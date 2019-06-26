@@ -1,3 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env ruby
 
-echo 'release phase'
+puts 'release phase'
+exit 1 if ENV['RELEASE_PHASE_FAIL']
